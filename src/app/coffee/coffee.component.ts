@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-coffee',
+  templateUrl: './coffee.component.html',
+  styleUrls: ['./coffee.component.scss']
 })
-export class AppComponent {
+export class CoffeeComponent {
+
   title = 'Anuj Uppal';
 
   check1 : boolean = true;
@@ -32,5 +33,4 @@ export class AppComponent {
   oh_yeah(eve){
     // console.log(eve);
   }
-
 }

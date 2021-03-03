@@ -1,0 +1,51 @@
+<header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Coffee</a>
+      </div>
+      <div (click)="navManuClick()" class="nav__toggle" id="nav-toggle">
+        <mat-icon>menu</mat-icon>
+      </div>
+      <div id="nav-menu" [ngClass]="check1 ? 'nav__menu' : 'show'">
+        <div (click)="navCloseClick()" class="nav__close" id="nav-close">
+          <mat-icon>close</mat-icon>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="l-main">
+    <section class="home">
+      <div class="home__container bd-grid">
+        <!-- <div class="home__img">
+          <img src="../assets/img/automative-tubes-250x250.jpg">
+          <img src="../assets/img/fitted-tyre-tube-500x500.jpg">
+          <img src="../assets/img/heavy-vehicle-tube-500x500.jpg">
+          <img src="../assets/img/industrial-tube-500x500.jpg">
+          <img src="../assets/img/motorcycle-tube-500x500.jpg">
+          <img src="../assets/img/natural-butyl-tyre-tube-531.jpg">
+        </div> -->
+  
+        <div class="home__img" (mouseover)="oh_yeah($event)">
+          <img src="../assets/img/3-75-12-butyl-tube-250x250_prev_ui.png" class="move">
+          <!-- <img src="../assets/img/fitted-tyre-tube-500x500_prev_ui.png"> -->
+          <img src="../assets/img/heavy-vehicle-tube-500x500_prev_ui.png" class="move">
+          <!-- <img src="../assets/img/industrial-tube-500x500_prev_ui.png">
+          <img src="../assets/img/motorcycle-tube-500x500_prev_ui.png">
+          <img src="../assets/img/natural-butyl-tyre-tube-531_prev_ui.png"> -->
+        </div>
+  
+        <div class="home__data">
+          <h1 class="home__title">Coffee<br> Drink 3D</h1>
+          <p class="home__description">Lets help discover the best coffee drink <br> of the week.</p>
+          <a href="#" class="home__button">Get Started</a>
+        </div>
+      </div>
+    </section>
+</main>
